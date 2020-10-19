@@ -15,6 +15,7 @@ import org.junit.Test;
                     val=1;
                 else
                     val++;
+
                 hMap.add(word,val);
             }
             int freq = hMap.get("to");

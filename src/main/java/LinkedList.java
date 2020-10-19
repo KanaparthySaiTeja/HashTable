@@ -12,6 +12,7 @@
             } else {
                 while (node.getNext() != null) {
                     node = node.getNext();
+
                 }
                 node.setNext(end);
             }
