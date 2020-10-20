@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HashTableTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-19T02:05:27" hostname="DESKTOP-UDL4V0I" time="0.004">
+<testsuite name="HashTableTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-20T02:56:31" hostname="DESKTOP-UDL4V0I" time="0.018">
   <properties/>
-  <testcase name="given_a_string_whenPassed_returnFreq" classname="HashTableTest" time="0.004"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="given_a_string_whenPassed_returnFreq" classname="HashTableTest" time="0.018"/>
+  <system-out><![CDATA[MyHashMapNodes {LinkedListNodes{MyMapNode{K = to V = 2 }->MyMapNode{K = be V = 2 }->MyMapNode{K = or V = 1 }->MyMapNode{K = not V = 1 }}}
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

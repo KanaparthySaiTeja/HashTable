@@ -1,21 +1,20 @@
-public class HashMap<K,V> {
-
-    LinkedList<K,V> list;
+public class HashMap<K, V> {
+    LinkedList<K> list;
 
     public HashMap(){
-        list=new LinkedList();
+        list = new  LinkedList<>();
     }
 
     public V get(K key) {
-        NodeMap<K,V> mapNode = (NodeMap<K, V>) list.search(key);
+        MyMapNode<K,V> mapNode = (MyMapNode<K, V>) this.list.search(key);
         return (mapNode == null) ? null : mapNode.getValue();
     }
 
     public void add(K key, V value) {
-        NodeMap<K,V> mapNode = (NodeMap<K, V>) list.search(key);
+        MyMapNode<K,V> mapNode = (MyMapNode<K, V>) this.list.search(key);
         if(mapNode==null){
-            mapNode = new NodeMap<>(key,value);
-            list.append(mapNode);
+            mapNode = new MyMapNode<>(key,value);
+            this.list.append(mapNode);
         }
         else
             mapNode.setValue(value);
@@ -23,6 +22,6 @@ public class HashMap<K,V> {
 
     @Override
     public String toString() {
-        return "HashNodes {"+ list + "}";
+        return "MyHashMapNodes {"+ list + "}";
     }
 }

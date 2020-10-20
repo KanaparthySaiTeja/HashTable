@@ -19,6 +19,7 @@ import org.junit.Test;
                 hMap.add(word,val);
             }
             int freq = hMap.get("to");
+            System.out.println(hMap);
             Assert.assertEquals(2,freq);
         }
     }
